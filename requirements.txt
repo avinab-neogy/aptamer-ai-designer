@@ -1,0 +1,6 @@
+streamlit
+viennarna
+biopython
+rdkit
+pandas
+scikit-learn
