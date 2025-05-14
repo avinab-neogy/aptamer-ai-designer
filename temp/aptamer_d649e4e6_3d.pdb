@@ -1,0 +1,42 @@
+HEADER    SIMULATED APTAMER STRUCTURE
+TITLE     APTAMER VISUALIZATION MODEL
+ATOM      1  CC  C A   1       5.000   0.000   0.000  1.00  0.00           C
+ATOM      2  CC  C A   2       4.045   2.939   3.400  1.00  0.00           C
+CONECT    1    2
+ATOM      3  CG  G A   3       2.318   7.133   6.800  1.00  0.00           C
+CONECT    2    3
+ATOM      4  CC  C A   4      -2.318   7.133  10.200  1.00  0.00           C
+CONECT    3    4
+ATOM      5  CG  G A   5      -6.068   4.408  13.600  1.00  0.00           C
+CONECT    4    5
+ATOM      6  CC  C A   6      -7.500   0.000  17.000  1.00  0.00           C
+CONECT    5    6
+ATOM      7  CT  T A   7      -6.068  -4.408  20.400  1.00  0.00           C
+CONECT    6    7
+ATOM      8  CC  C A   8      -2.318  -7.133  23.800  1.00  0.00           C
+CONECT    7    8
+ATOM      9  CA  A A   9       2.318  -7.133  27.200  1.00  0.00           C
+CONECT    8    9
+ATOM     10  CA  A A  10       6.068  -4.408  30.600  1.00  0.00           C
+CONECT    9   10
+ATOM     11  CG  G A  11       5.000  -0.000  34.000  1.00  0.00           C
+CONECT   10   11
+ATOM     12  CG  G A  12       4.045   2.939  37.400  1.00  0.00           C
+CONECT   11   12
+ATOM     13  CA  A A  13       2.318   7.133  40.800  1.00  0.00           C
+CONECT   12   13
+ATOM     14  CA  A A  14      -2.318   7.133  44.200  1.00  0.00           C
+CONECT   13   14
+ATOM     15  CC  C A  15      -6.068   4.408  47.600  1.00  0.00           C
+CONECT   14   15
+ATOM     16  CC  C A  16      -7.500   0.000  51.000  1.00  0.00           C
+CONECT   15   16
+ATOM     17  CC  C A  17      -6.068  -4.408  54.400  1.00  0.00           C
+CONECT   16   17
+ATOM     18  CT  T A  18      -2.318  -7.133  57.800  1.00  0.00           C
+CONECT   17   18
+ATOM     19  CA  A A  19       2.318  -7.133  61.200  1.00  0.00           C
+CONECT   18   19
+ATOM     20  CA  A A  20       6.068  -4.408  64.600  1.00  0.00           C
+CONECT   19   20
+END

@@ -1,0 +1,82 @@
+HEADER    SIMULATED APTAMER STRUCTURE
+TITLE     APTAMER VISUALIZATION MODEL
+ATOM      1  CT  T A   1       7.500   0.000   0.000  1.00  0.00           C
+ATOM      2  CT  T A   2       6.068   4.408   3.400  1.00  0.00           C
+CONECT    1    2
+ATOM      3  CT  T A   3       2.318   7.133   6.800  1.00  0.00           C
+CONECT    2    3
+ATOM      4  CA  A A   4      -2.318   7.133  10.200  1.00  0.00           C
+CONECT    3    4
+ATOM      5  CG  G A   5      -4.045   2.939  13.600  1.00  0.00           C
+CONECT    4    5
+ATOM      6  CC  C A   6      -5.000   0.000  17.000  1.00  0.00           C
+CONECT    5    6
+ATOM      7  CG  G A   7      -4.045  -2.939  20.400  1.00  0.00           C
+CONECT    6    7
+ATOM      8  CT  T A   8      -1.545  -4.755  23.800  1.00  0.00           C
+CONECT    7    8
+ATOM      9  CA  A A   9       1.545  -4.755  27.200  1.00  0.00           C
+CONECT    8    9
+ATOM     10  CT  T A  10       4.045  -2.939  30.600  1.00  0.00           C
+CONECT    9   10
+ATOM     11  CT  T A  11       7.500  -0.000  34.000  1.00  0.00           C
+CONECT   10   11
+ATOM     12  CG  G A  12       6.068   4.408  37.400  1.00  0.00           C
+CONECT   11   12
+ATOM     13  CG  G A  13       2.318   7.133  40.800  1.00  0.00           C
+CONECT   12   13
+ATOM     14  CC  C A  14      -2.318   7.133  44.200  1.00  0.00           C
+CONECT   13   14
+ATOM     15  CC  C A  15      -6.068   4.408  47.600  1.00  0.00           C
+CONECT   14   15
+ATOM     16  CC  C A  16      -7.500   0.000  51.000  1.00  0.00           C
+CONECT   15   16
+ATOM     17  CC  C A  17      -4.045  -2.939  54.400  1.00  0.00           C
+CONECT   16   17
+ATOM     18  CA  A A  18      -1.545  -4.755  57.800  1.00  0.00           C
+CONECT   17   18
+ATOM     19  CC  C A  19       1.545  -4.755  61.200  1.00  0.00           C
+CONECT   18   19
+ATOM     20  CC  C A  20       4.045  -2.939  64.600  1.00  0.00           C
+CONECT   19   20
+ATOM     21  CA  A A  21       7.500  -0.000  68.000  1.00  0.00           C
+CONECT   20   21
+ATOM     22  CG  G A  22       6.068   4.408  71.400  1.00  0.00           C
+CONECT   21   22
+ATOM     23  CC  C A  23       2.318   7.133  74.800  1.00  0.00           C
+CONECT   22   23
+ATOM     24  CG  G A  24      -2.318   7.133  78.200  1.00  0.00           C
+CONECT   23   24
+ATOM     25  CA  A A  25      -6.068   4.408  81.600  1.00  0.00           C
+CONECT   24   25
+ATOM     26  CG  G A  26      -7.500   0.000  85.000  1.00  0.00           C
+CONECT   25   26
+ATOM     27  CA  A A  27      -6.068  -4.408  88.400  1.00  0.00           C
+CONECT   26   27
+ATOM     28  CC  C A  28      -2.318  -7.133  91.800  1.00  0.00           C
+CONECT   27   28
+ATOM     29  CA  A A  29       2.318  -7.133  95.200  1.00  0.00           C
+CONECT   28   29
+ATOM     30  CA  A A  30       6.068  -4.408  98.600  1.00  0.00           C
+CONECT   29   30
+ATOM     31  CG  G A  31       5.000  -0.000 102.000  1.00  0.00           C
+CONECT   30   31
+ATOM     32  CG  G A  32       4.045   2.939 105.400  1.00  0.00           C
+CONECT   31   32
+ATOM     33  CT  T A  33       1.545   4.755 108.800  1.00  0.00           C
+CONECT   32   33
+ATOM     34  CG  G A  34      -1.545   4.755 112.200  1.00  0.00           C
+CONECT   33   34
+ATOM     35  CA  A A  35      -4.045   2.939 115.600  1.00  0.00           C
+CONECT   34   35
+ATOM     36  CT  T A  36      -5.000   0.000 119.000  1.00  0.00           C
+CONECT   35   36
+ATOM     37  CA  A A  37      -4.045  -2.939 122.400  1.00  0.00           C
+CONECT   36   37
+ATOM     38  CC  C A  38      -1.545  -4.755 125.800  1.00  0.00           C
+CONECT   37   38
+ATOM     39  CG  G A  39       1.545  -4.755 129.200  1.00  0.00           C
+CONECT   38   39
+ATOM     40  CT  T A  40       4.045  -2.939 132.600  1.00  0.00           C
+CONECT   39   40
+END
