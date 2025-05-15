@@ -10,6 +10,10 @@ from Bio.SeqUtils import molecular_weight
 import hashlib
 import plotly.express as px
 
+# Add stmol for 3D visualization
+from stmol import showmol
+import py3Dmol
+
 # Set background image
 def set_background(image_path):
     with open(image_path, "rb") as image_file:
@@ -263,16 +267,14 @@ def main():
                     
                     if model_path and Path(model_path).exists():
                         try:
-                            import py3Dmol
-                            view = py3Dmol.view(width=300, height=300)
+                            view = py3Dmol.view(width=400, height=400)
                             with open(model_path, 'r') as f:
                                 pdb_data = f.read()
                             view.addModel(pdb_data, 'pdb')
                             view.setStyle({'cartoon': {'color': 'spectrum'}})
                             view.zoomTo()
-                            view.setBackgroundColor('0xeeeeee')
-                            html_data = view._make_html()
-                            st.components.v1.html(html_data, height=600)
+                            view.setBackgroundColor('white')
+                            showmol(view, height=400, width=400)
                         except Exception as e:
                             st.error(f"Visualization error: {str(e)}")
                     else:
