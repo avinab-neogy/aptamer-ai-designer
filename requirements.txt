@@ -1,6 +1,6 @@
-streamlit
-viennarna
-biopython
-rdkit
-pandas
-scikit-learn
+streamlit>=1.32.0
+plotly>=5.18.0
+pandas>=2.0.0
+biopython>=1.81
+py3dmol>=2.0.3
+

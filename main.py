@@ -8,6 +8,7 @@ import pandas as pd
 import subprocess
 from Bio.SeqUtils import molecular_weight
 import hashlib
+import plotly.express as px
 
 # Set background image
 def set_background(image_path):
@@ -291,7 +292,6 @@ def main():
                         st.warning(f"No directory found for {seq[:10]}...")
 
 def plot_energy_distribution(df):
-    import plotly.express as px
     fig = px.histogram(df, x="mfe", nbins=20, 
                       title="Free Energy Distribution",
                       color_discrete_sequence=['#6366f1'])
