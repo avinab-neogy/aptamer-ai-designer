@@ -271,7 +271,8 @@ def main():
                             view.setStyle({'cartoon': {'color': 'spectrum'}})
                             view.zoomTo()
                             view.setBackgroundColor('0xeeeeee')
-                            st.components.v1.html(view._repr_html_(), height=350)
+                            html_data = view._make_html()
+                            st.components.v1.html(html_data, height=600)
                         except Exception as e:
                             st.error(f"Visualization error: {str(e)}")
                     else:
