@@ -8,11 +8,6 @@ import pandas as pd
 import subprocess
 from Bio.SeqUtils import molecular_weight
 import hashlib
-import plotly.express as px
-
-# Add stmol for 3D visualization
-from stmol import showmol
-import py3Dmol
 
 # Set background image
 def set_background(image_path):
@@ -41,7 +36,7 @@ st.set_page_config(
     }
 )
 
-# Apply core UI styling
+# Apply custom CSS
 st.markdown("""
     <style>
     .block-container {
@@ -89,29 +84,34 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# --- Enhanced file uploader styling for light box ---
+# --- ADDITIONAL CSS FOR WHITE UPLOAD AND NUMBER INPUT ---
 st.markdown("""
 <style>
-[data-testid="stFileUploadDropzone"] {
-    background: #fff !important;
-    border: 2px solid #60a5fa !important;
-    border-radius: 8px !important;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
+/* Make file uploader texts white */
+[data-testid="stFileUploadDropzone"] div div span,
+[data-testid="stFileUploadDropzone"] div div small,
+[data-testid="stFileUploadDropzone"] button,
+[data-testid="stFileUploadDropzone"] label {
+    color: #fff !important;
 }
-[data-testid="stFileUploadDropzone"] * {
-    color: #222 !important;
-    font-weight: 600 !important;
-    text-shadow: none !important;
-}
+
+/* Make the Browse files button text white */
 [data-testid="stFileUploadDropzone"] button {
     color: #fff !important;
     background: #6366f1 !important;
+    border-radius: 8px !important;
+}
+
+/* Make the number input text white */
+[data-testid="stNumberInput"] input {
+    color: #fff !important;
+    background: rgba(34,34,34,0.5) !important;
     border-radius: 6px !important;
-    font-weight: 700 !important;
-    border: none !important;
-    box-shadow: 0 1px 6px rgba(99,102,241,0.10);
+}
+
+/* Make number input label white */
+[data-testid="stNumberInput"] label {
+    color: #fff !important;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -267,14 +267,15 @@ def main():
                     
                     if model_path and Path(model_path).exists():
                         try:
-                            view = py3Dmol.view(width=400, height=400)
+                            import py3Dmol
+                            view = py3Dmol.view(width=300, height=300)
                             with open(model_path, 'r') as f:
                                 pdb_data = f.read()
                             view.addModel(pdb_data, 'pdb')
                             view.setStyle({'cartoon': {'color': 'spectrum'}})
                             view.zoomTo()
-                            view.setBackgroundColor('white')
-                            showmol(view, height=400, width=400)
+                            view.setBackgroundColor('0xeeeeee')
+                            st.components.v1.html(view._repr_html_(), height=350)
                         except Exception as e:
                             st.error(f"Visualization error: {str(e)}")
                     else:
@@ -295,6 +296,7 @@ def main():
                         st.warning(f"No directory found for {seq[:10]}...")
 
 def plot_energy_distribution(df):
+    import plotly.express as px
     fig = px.histogram(df, x="mfe", nbins=20, 
                       title="Free Energy Distribution",
                       color_discrete_sequence=['#6366f1'])
